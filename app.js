@@ -235,7 +235,7 @@ var leveldeg = level*20;
 var degrees = 0 + leveldeg,
 	 radius = .5;
 var radians = degrees * Math.PI / 180;
-var x = radius * Math.cos(radians);
+var x = -1*radius * Math.cos(radians);
 var y = radius * Math.sin(radians);
 
 // Path: may have to change to create a better triangle
@@ -255,14 +255,14 @@ var data3 = [{ type: 'scatter',
 	hoverinfo: 'text+name'},
   { values: [50/9, 50/9, 50/9, 50/9, 50/9, 50/9, 50/9, 50/9, 50/9,  50],
   rotation: 90,
-  text: ['0-1','1-2','2-3','3-4','4-5','5-6','6-7','7-8','8-9',''],
+  text: ['8-9','7-8','6-7','5-6','4-5','3-4','2-3','1-2','0-1',''],
   textinfo: 'text',
   textposition:'inside',
   marker: {colors:['rgba(14, 127, 0, .5)', 'rgba(110, 154, 22, .5)',
 						 'rgba(170, 202, 42, .5)', 'rgba(202, 209, 95, .5)',
 						 'rgba(210, 206, 145, .5)', 'rgba(232, 226, 202, .6)', 'rgba(10, 200, 75, .7)', 'rgba(100, 200, 75, .8)', 'rgba(100, 75, 75, .9)',
 						 'rgba(255, 255, 255, 0)']},
-  labels: ['0-1','1-2','2-3','3-4','4-5','5-6','6-7','7-8','8-9', ''],
+  labels: ['8-9','7-8','6-7','5-6','4-5','3-4','2-3','1-2','0-1',''],
   hoverinfo: 'label',
   hole: .5,
   type: 'pie',
